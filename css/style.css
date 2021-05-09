@@ -1,0 +1,23 @@
+.resimSlider{
+    height: 50%;
+}
+.abc{
+    
+    width: 70vw;
+    margin: auto;
+}
+body{
+    padding-top: 4%;
+}
+.YaziTipi1 {
+    font-family: 'Itim', cursive;
+}
+.hakkimizda{
+    background-color: #e7e7e7;
+}
+.ayrac{
+    background-color: #f2f2f2;
+}
+.cizgi{
+    border:0.2vw solid black;
+}
