@@ -11,3 +11,6 @@ Projede Ne Yapmayı Hedefliyorum?
 -  Login kısmı oluşturup kayıtlı kullanıcıların girdiği zaman ekranda Hoş geldiniz yazısı çıkartacağım. Eğer şifre ya da kullanıcı adı yanlış ise sayfaya geri döndürülecek.
 
 -  Form elemanları ve javascript ile iletişim sayfası oluşturacağım.
+
+####
+VC'dan commit yapabilmek amacıyla BenimSitem2 repository si oluşturdum. Bundan sonra commitlerim orada bulunacak. Teşekkürler
