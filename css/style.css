@@ -7,17 +7,65 @@
     margin: auto;
 }
 body{
-    padding-top: 4%;
+    padding-top: 3%;
+    background-color: gray;
 }
 .YaziTipi1 {
     font-family: 'Itim', cursive;
 }
 .hakkimizda{
-    background-color: #e7e7e7;
+    background-color: gray;
 }
 .ayrac{
     background-color: #f2f2f2;
 }
 .cizgi{
     border:0.2vw solid black;
+}
+.fotograf{
+    height: 50vw;
+    width: 100%;
+}
+.clr{
+    background-color: #9d9d9d;
+}
+
+
+.myButton {
+	background-color:#44c767;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size: 1vw;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background-color:#5cbf2a;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+.btn{
+    background-color: #897878;
+}
+.btn:hover{
+    background-color: #9d9d9d;
+}
+.Link{
+    color: black;
+    text-decoration: none;
+}
+.headerr
+{
+    background-color: burlywood;
+    width: 100%;
+}
+.jumbotron{
+    padding: 3%;
 }
