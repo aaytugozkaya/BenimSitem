@@ -13,5 +13,3 @@ Projede Ne Yapmayı Hedefliyorum?
 
 -  Form elemanları ve javascript ile iletişim sayfası oluşturacağım.
 
-####
-VC'dan commit yapabilmek amacıyla BenimSitem2 repository si oluşturdum. Bundan sonra commitlerim orada bulunacak. Teşekkürler
