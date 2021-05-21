@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Anasayfa</title>
+    <title>İletişim</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/6b3e98aeb2.js" crossorigin="anonymous"></script>
-  
+    <link rel="shortcut icon" href="img/a.jpg" type="image/x-icon">
   </head>
   <body>
     
@@ -39,7 +39,10 @@
           </li><li class="nav-item">
             <a class="nav-link" href="iletisim.html">İletişim</a>
           </li>
-          
+          <li class="nav-item">
+						<a href="giris.php" class="nav-link active  text-white">
+	      				<i class="fas fa-sign-in-alt"></i>
+	      				</a></li>
           <!-- <li class="nav-item">
             <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
           </li> -->
@@ -54,7 +57,8 @@
         <div class="container">
           <h2 class="mb-3 font-weight-bold">İletişim</h2><i class="fas fa-code ibeyaz"></i>
           <hr class="cizgi">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vel facilis velit porro
+          <p>Bu sayfadan bana ulaşabilir,isteklerinizi bildirebilirsiniz!</p>
+          <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vel facilis velit porro
              aut voluptatibus excepturi quis ab tempora. Quaerat dignissimos officia ut adipisci! Laboriosam,
               architecto! Necessitatibus rem culpa dolore Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                Impedit laudantium quas consequuntur minus a doloribus expedita minima nam sapiente enim? Nam sequi quisquam
@@ -62,13 +66,49 @@
                  Saepe et nesciunt vitae quia provident consectetur placeat, sed harum ratione delectus inventore eligendi porro nihil 
                  soluta fuga, minima ad temporibus aut! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit perferendis,
                   quam doloribus quos fugit excepturi minima dolorum vel quod. Saepe harum vero blanditiis esse temporibus omnis asperiores
-                   vel delectus eius!</p>
+                   vel delectus eius! Lorem</p> -->
         </div>
 
     </section>
-
-
+    <br><br>
     <!-- bitis -->
+
+
+    <main>
+
+      <div class="container">
+        
+        <form action="git.html" name="Form" onsubmit="return control()">
+  
+          <div class="form-group">
+            <label for="name">İsim</label>
+            <input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
+            <small class="form-text text-muted">Zorunlu alan</small>
+          </div>
+  
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
+            <small class="form-text text-muted">Zorunlu alan</small>
+          </div>
+  
+          <div class="form-group">
+            <label for="message">Mesaj</label>
+            <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+          </div>
+            <br>
+          <button class="btn btn-info" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
+  
+          <button class="btn btn btn-info" type="submit" id="sub">Gönder</button>
+  
+          <br><br><br>
+  
+        </form>
+  
+      </div>
+  
+    </main>
+  
     
     
     

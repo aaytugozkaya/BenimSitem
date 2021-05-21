@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>CV</title>
+    <title>Anasayfa</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/a.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/6b3e98aeb2.js" crossorigin="anonymous"></script>
+  
   </head>
   <body>
-    
+    <!-- hazır -->
   <!-- menü kısmı başlanıgıcı -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top YaziTipi1">
     <div class="container-fluid">
@@ -40,25 +41,64 @@
             <a class="nav-link" href="iletisim.html">İletişim</a>
           </li>
           <li class="nav-item">
-						<a href="giris.php" class="nav-link active  text-white">
-	      				<i class="fas fa-sign-in-alt"></i>
-	      				</a></li>
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li> -->
+			<a href="giris.php" class="nav-link active  text-white">
+	      	<i class="fas fa-sign-in-alt"></i>
+	    	</a></li>
         </ul>
       </div>
     </div>
   </nav>   
   <!-- menü bitiş -->
 
-  
-    
+  <header>
 
+		<div class="bg-secondary text-dark jumbotron  ">
 
+			<div class="container header">
+
+				<div class="col-md-12 px-0">
+					<h1 class="display-4 font-italic text-center">
+						Giriş Ekranı
+					</h1>		
+          <p class="lead my-3">
+
+					
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
   <br><br><br><br><br><br><br>
     
+  <main>
+
+<div class="container">
     
+    <form action="GirisOnay.php" method="POST">
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" name="email" class="form-control" placeholder="Email 'email@mail.com'" required="required">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control" placeholder="Şifre 'Password'" required="required">
+        </div>
+        <br>
+        <button class="btn btn btn-info" type="submit">Gönder</button>
+
+        <br><br><br>
+
+    </form>
+
+</div>
+
+</main>
+
     
     
     
@@ -105,5 +145,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
     -->
+   
+  
+   
   </body>
 </html>
