@@ -13,6 +13,7 @@
   
   </head>
   <body>
+    
     <!-- hazır -->
   <!-- menü kısmı başlanıgıcı -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top YaziTipi1">
@@ -81,7 +82,7 @@
 
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" name="email" class="form-control" placeholder="Email 'email@mail.com'" required="required">
+            <input type="email" name="email" onKeyUp="kontrol()" class="form-control" placeholder="Email 'email@mail.com'" required="required">
         </div>
 
         <div class="form-group">
@@ -92,49 +93,19 @@
         <button class="btn btn btn-info" type="submit">Gönder</button>
 
         <br><br><br>
-
+        
     </form>
 
 </div>
 
 </main>
 
+
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+ 
+
   <footer class="py-3 text-white   text-center clr">
 		<p>Web-Teknolojileri-Projesi Aytuğ Özkaya 2021</p>
     <p><a href="https://github.com/aaytugozkaya?tab=repositories"  class="Link"><i class="fab fa-github"></i> Github</a></p>

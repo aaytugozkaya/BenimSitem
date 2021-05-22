@@ -53,9 +53,9 @@
   <!-- menü bitiş -->
   
     <!-- iletisim -->
-    <section class="p-5 text-center ayrac">
+    <section class="p-5 text-center">
         <div class="container">
-          <h2 class="mb-3 font-weight-bold">İletişim</h2><i class="fas fa-code ibeyaz"></i>
+          <h2 class="mb-3 font-weight-bold">İletişim</h2><i class="fas fa-code"></i>
           <hr class="cizgi">
           <p>Bu sayfadan bana ulaşabilir,isteklerinizi bildirebilirsiniz!</p>
           <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe vel facilis velit porro
@@ -72,29 +72,29 @@
     </section>
     <br><br>
     <!-- bitis -->
-
+   
 
     <main>
 
       <div class="container">
         
-        <form action="git.html" name="Form" onsubmit="return control()">
+        <form action="GeriDonusler.html" name="Form" onsubmit="return control(this)">
   
           <div class="form-group">
             <label for="name">İsim</label>
-            <input type="text" name="name" class="form-control" placeholder="İsminizi Girin">							
+            <input type="text" name="isim" id="isim" class="form-control"  placeholder="İsminizi Girin">							
             <small class="form-text text-muted">Zorunlu alan</small>
           </div>
   
           <div class="form-group">
             <label for="email">Email</label>
-            <input type="text" name="email" class="form-control" placeholder="Emailinizi girin.">
+            <input type="text" name="mail" id="mail" class="form-control" placeholder="Emailinizi girin.">
             <small class="form-text text-muted">Zorunlu alan</small>
           </div>
-  
+         
           <div class="form-group">
             <label for="message">Mesaj</label>
-            <textarea name="message" id="message" rows="5" class="form-control"></textarea>
+            <textarea name="mesaj" id="mesaj" rows="5" class="form-control"></textarea>
           </div>
             <br>
           <button class="btn btn-info" type="reset" id="submit" name="submit" value="Reset" onclick="check()">Temizle</button>
@@ -109,49 +109,44 @@
   
     </main>
   
+
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    <script type="text/javascript">
+      function control(frm)
+      {
+          var kullaniciadi = frm.isim.value;          
+          var email = frm.mail.value;
+          var msg = frm.mesaj.value;
+          var ilkpos= email.indexOf("@");
+          var sonpos= email.lastIndexOf(".");
+          
+          if ( msg==null || msg=="" || msg.length < 10 )
+          {
+              alert("Mesaj boş veya 10 karakterden az olamaz");
+              return false;
+          }
+          if ( kullaniciadi==null || kullaniciadi=="" || kullaniciadi.length < 4 )
+          {
+              alert("Kullanıcı adı 4 karakterden az olamaz");
+              return false;
+          }
+          if ( ilkpos<1 || sonpos<atpos+2 || sonpos+2>=email.length )
+          {
+              alert("Geçerli email adresi girin");
+              return false;
+          }      
+
+          return true;
+      }
+      </script>
     
     
     <footer class="py-3 text-white   text-center clr">
       <p>Web-Teknolojileri-Projesi Aytuğ Özkaya 2021</p>
       <p><a href="https://github.com/aaytugozkaya?tab=repositories"  class="Link"><i class="fab fa-github"></i> Github</a></p>
     </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
