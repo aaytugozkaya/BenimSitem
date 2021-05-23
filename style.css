@@ -28,9 +28,10 @@ body{
 }
 .clr{
     background-color: #9d9d9d;
+    
 }
 
-
+s
 .myButton {
 	background-color:#44c767;
 	border-radius:28px;
@@ -67,5 +68,25 @@ body{
     width: 100%;
 }
 .jumbotron{
+    padding: 3%;
+}
+.Uludag{
+    background-image:url(img/uludag_yol.jpg) ;
+    
+    padding: 3%;
+}
+.Ulucami{
+    background-image:url(img/ulucami_header.jpg) ;
+    background-position: 10% 70%;
+    padding: 3%;
+}
+.Tophane{
+    background-image:url(img/tophanemanzara.jpg) ;
+    background-position: 40% 80%;
+    padding: 3%;
+}
+.Kc{
+    background-image:url(img/kapalıçarşı.jpg) ;
+    background-position: 10% 70%;
     padding: 3%;
 }

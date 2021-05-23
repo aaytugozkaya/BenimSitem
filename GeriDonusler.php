@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="style.css">
     <title>İletişim Kontrol</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -60,24 +60,6 @@
     <br><br>
     <!-- bitis -->
 
-    <script type="text/javascript">
-
-      function getParameterByName(name, url) 
-      {
-              if (!url) url = window.location.href;
-               name = name.replace(/[\[\]]/g, '\\$&');
-              var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-                  results = regex.exec(url);
-               if (!results) return null;
-               if (!results[2]) return '';
-               return decodeURIComponent(results[2].replace(/\+/g, ' '));
-          }
-
-          var isim = getParameterByName('isim');
-          var mail = getParameterByName('mail');
-          var mesaj = getParameterByName('mesaj');
-
-    </script>
 
     <table class="table">
         <thead class="table">
@@ -90,24 +72,43 @@
             <tr>
                 <td>İsminiz</td>
                 <td>
-                    <script>document.write(isim);
-                    </script>
+                   
+                    <?php
+                      echo $_POST['isim'];
+                    ?>
+
                 </td>
             </tr>
 
             <tr>
                 <td>E-Mail</td>
                 <td>
-                    <script>document.write(mail);
-                    </script>
+                     <?php
+                      echo $_POST['mail'];
+                    ?>
                 </td>
             </tr>
 
             <tr>
+              <td>Seçiminiz</td>
+              <td>
+                    <?php  
+                     if(isset($_POST['gonder'])){
+                      
+                         $secim =$_POST['radio'];
+                         echo $secim;
+                      } 
+                      
+                    ?>
+              </td>
+          </tr>
+
+            <tr>
                 <td>Mesajınız</td>
                 <td>
-                    <script>document.write(mesaj);
-                    </script>
+                    <?php
+                      echo $_POST['mesaj'];
+                    ?>
                 </td>
             </tr>
 
