@@ -64,7 +64,7 @@
     <table class="table">
         <thead class="table">
             <tr>
-                <th>Gelen Bilgiler ;</th>
+                <th colspan="4">Gelen Bilgiler ;</th>
             </tr>
         </thead>
 
@@ -98,7 +98,6 @@
                          $secim =$_POST['radio'];
                          echo $secim;
                       } 
-                      
                     ?>
               </td>
           </tr>
